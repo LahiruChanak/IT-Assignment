@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case 3</title>
+    <link rel="icon" href="/assets/images/logo.png" />
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .main-circle,
+      .middle-circle {
+        border-radius: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .main-circle {
+        position: fixed;
+        width: 15vw;
+        height: 15vw;
+        border: 18px solid grey;
+      }
+
+      .middle-circle {
+        position: fixed;
+        width: 14vw;
+        height: 14vw;
+        border: 13px solid red;
+      }
+
+      .inner-circle-1,
+      .inner-circle-2,
+      .inner-circle-3 {
+        width: 14vw;
+        height: 14vw;
+        border-radius: 100%;
+        color: white;
+      }
+
+      .inner-circle-1 {
+        background-color: purple;
+      }
+
+      .inner-circle-2 {
+        background-color: skyblue;
+      }
+
+      .inner-circle-3 {
+        background-color: lightcoral;
+      }
+
+      .container {
+        height: 300vh;
+        display: flex;
+        flex-direction: column;
+        gap: 89vh;
+        padding: 272vh 0 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      p {
+        text-align: center;
+        margin: 45px 0;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-circle-1">
+        <p>Hello</p>
+      </div>
+
+      <div class="inner-circle-2">
+        <p>Welcome To</p>
+      </div>
+
+      <div class="inner-circle-3">
+        <p>Institute of Software Engineering</p>
+      </div>
+    </div>
+
+    <div class="main-circle">
+      <div class="middle-circle"></div>
+    </div>
+  </body>
+</html>
