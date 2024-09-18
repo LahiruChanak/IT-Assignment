@@ -12,102 +12,93 @@
       }
 
       /* //////////////////// boxes //////////////////// */
-      .box-1,
-      .box-2,
-      .box-3,
-      .box-4 {
+      .box {
         position: absolute;
         width: 50vw;
         height: 50vh;
       }
 
-      .box-1 {
-        background-color: red;
+      #box-1 {
+        background-color: #ff0101;
         top: 0;
         left: 0;
       }
 
-      .box-2 {
-        background-color: green;
+      #box-2 {
+        background-color: #008001;
         top: 0;
         right: 0;
       }
 
-      .box-3 {
-        background-color: orange;
+      #box-3 {
+        background-color: #ffa802;
         bottom: 0;
         left: 0;
       }
 
-      .box-4 {
-        background-color: hotpink;
+      #box-4 {
+        background-color: #ff1593;
         bottom: 0;
         right: 0;
       }
 
       /* /////////////////// circles /////////////////// */
 
-      .top-left-circle,
-      .top-right-circle,
-      .bottom-left-circle,
-      .bottom-right-circle {
+      .corner-circles {
         background-color: white;
         width: 12vh;
         height: 25%;
         position: absolute;
       }
 
-      .top-left-circle {
+      #top-left-circle {
         border-bottom-right-radius: 100%;
       }
 
-      .top-right-circle {
+      #top-right-circle {
         border-bottom-left-radius: 100%;
         top: 0;
         right: 0;
       }
 
-      .bottom-left-circle {
+      #bottom-left-circle {
         border-top-right-radius: 100%;
         bottom: 0;
         left: 0;
       }
 
-      .bottom-right-circle {
+      #bottom-right-circle {
         border-top-left-radius: 100%;
         bottom: 0;
         right: 0;
       }
 
-      .middle-top-left-circle,
-      .middle-top-right-circle,
-      .middle-bottom-left-circle,
-      .middle-bottom-right-circle {
+      .middle-circles {
         background-color: white;
         width: 10vh;
         height: 20%;
         position: absolute;
       }
 
-      .middle-top-left-circle {
+      #middle-top-left-circle {
         border-bottom-left-radius: 100%;
         top: 0;
         right: 0;
       }
 
-      .middle-top-right-circle {
+      #middle-top-right-circle {
         border-bottom-right-radius: 100%;
         top: 0;
         left: 0;
       }
 
-      .middle-bottom-left-circle {
+      #middle-bottom-left-circle {
         border-top-left-radius: 100%;
         bottom: 0;
         right: 0;
       }
 
-      .middle-bottom-right-circle {
+      #middle-bottom-right-circle {
         border-top-right-radius: 100%;
         bottom: 0;
         left: 0;
@@ -129,73 +120,66 @@
       }
 
       .center-circle {
-        background-color: red;
+        background-color: #ff0101;
         width: 12vh;
         height: 12vh;
         border-radius: 100%;
       }
 
-      .box-1-center-circle,
-      .box-2-center-circle,
-      .box-3-center-circle,
-      .box-4-center-circle,
-      .box-1-center-box,
-      .box-2-center-box,
-      .box-3-center-box,
-      .box-4-center-box {
+      .box-center {
+        background-color: #ff0101;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
 
-      .box-1-center-circle,
-      .box-2-center-circle,
-      .box-3-center-circle,
-      .box-4-center-circle {
+      #box-1-center-circle,
+      #box-2-center-circle,
+      #box-3-center-circle,
+      #box-4-center-circle {
         background-color: white;
         width: 25vh;
         height: 25vh;
         border-radius: 100%;
       }
 
-      .box-1-center-box,
-      .box-2-center-box,
-      .box-3-center-box,
-      .box-4-center-box {
-        background-color: red;
+      #box-1-center-box,
+      #box-2-center-box,
+      #box-3-center-box,
+      #box-4-center-box {
         width: 10vh;
         height: 10vh;
       }
     </style>
   </head>
   <body>
-    <div class="box-1">
-      <div class="top-left-circle"></div>
-      <div class="middle-top-left-circle"></div>
-      <div class="box-1-center-circle"></div>
-      <div class="box-1-center-box"></div>
+    <div class="box" id="box-1">
+      <div class="corner-circles" id="top-left-circle"></div>
+      <div class="middle-circles" id="middle-top-left-circle"></div>
+      <div class="box-center" id="box-1-center-circle"></div>
+      <div class="box-center" id="box-1-center-box"></div>
     </div>
 
-    <div class="box-2">
-      <div class="top-right-circle"></div>
-      <div class="middle-top-right-circle"></div>
-      <div class="box-2-center-circle"></div>
-      <div class="box-2-center-box"></div>
+    <div class="box" id="box-2">
+      <div class="corner-circles" id="top-right-circle"></div>
+      <div class="middle-circles" id="middle-top-right-circle"></div>
+      <div class="box-center" id="box-2-center-circle"></div>
+      <div class="box-center" id="box-2-center-box"></div>
     </div>
 
-    <div class="box-3">
-      <div class="bottom-left-circle"></div>
-      <div class="middle-bottom-left-circle"></div>
-      <div class="box-3-center-circle"></div>
-      <div class="box-3-center-box"></div>
+    <div class="box" id="box-3">
+      <div class="corner-circles" id="bottom-left-circle"></div>
+      <div class="middle-circles" id="middle-bottom-left-circle"></div>
+      <div class="box-center" id="box-3-center-circle"></div>
+      <div class="box-center" id="box-3-center-box"></div>
     </div>
 
-    <div class="box-4">
-      <div class="bottom-right-circle"></div>
-      <div class="middle-bottom-right-circle"></div>
-      <div class="box-4-center-circle"></div>
-      <div class="box-4-center-box"></div>
+    <div class="box" id="box-4">
+      <div class="corner-circles" id="bottom-right-circle"></div>
+      <div class="middle-circles" id="middle-bottom-right-circle"></div>
+      <div class="box-center" id="box-4-center-circle"></div>
+      <div class="box-center" id="box-4-center-box"></div>
     </div>
 
     <div class="center-box">

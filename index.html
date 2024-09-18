@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="icon" href="/assets/images/logo.png" />
+
+    <style>
+      /* import custom font */
+      @font-face {
+        font-family: "SkateSemiBold";
+        src: url(/assets/fonts/skate-5.ttf);
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      .navBar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: wheat;
+        border: 3px solid #ccc;
+        width: 20vw;
+        gap: 20px;
+        border-radius: 30px;
+        position: relative;
+        top: 10px;
+        left: 40%;
+      }
+
+      /* logo */
+      .logo {
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .logo:hover {
+        color: #f15641;
+        text-decoration: none;
+        font-weight: normal;
+      }
+
+      /* logo after */
+      .logo::after {
+        content: ".";
+        color: #f15641;
+        font-size: 2.1rem;
+        font-weight: bold;
+      }
+
+      /* Style for the dropdown menu */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-text {
+        cursor: pointer;
+        font-size: 1rem;
+        color: #000;
+      }
+
+      .dropdown-text:hover {
+        color: #f15641;
+        font-weight: bold;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff80;
+        width: 100px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 5px;
+        margin: 0 -20px;
+      }
+
+      .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9rem;
+        color: #000;
+      }
+
+      .dropdown-content a:hover {
+        color: #f15641;
+        font-weight: bold;
+      }
+
+      /* Show the dropdown on hover or click */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      section {
+        padding: 30px;
+      }
+
+      /* main content */
+      .main-title {
+        font-size: 2rem;
+        color: #1c1c1c;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        background-color: #1c1c1c;
+        color: #fff;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      hr {
+        margin: 0;
+      }
+
+      .image {
+        width: 250px;
+        border: 4px solid #ccc;
+        border-radius: 200px;
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .aboutMe {
+        font-size: 1.1rem;
+        color: #707070;
+      }
+      .aboutMe::first-letter {
+        font-size: 2.5rem;
+        color: #f15641;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navBar">
+        <a href="#" class="logo"> LK </a>
+
+        <div class="dropdown">
+          <p class="dropdown-text">Cases</p>
+          <div class="dropdown-content">
+            <a href="/Pages/case_01.html" target="_blank"> Case 01 </a>
+
+            <a href="/Pages/case_02.html" target="_blank"> Case 02 </a>
+
+            <a href="/Pages/case_03.html" target="_blank"> Case 03 </a>
+
+            <a href="/Pages/case_04.html" target="_blank"> Case 04 </a>
+
+            <a href="/Pages/case_05.html" target="_blank"> Case 05 </a>
+
+            <a href="/Pages/case_06.html" target="_blank"> Case 06 </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <h1 class="main-title">Assignment &nbsp; 03</h1>
+        </div>
+
+        <div class="container">
+          <img
+            src="/assets/images/aboutMe.jpg"
+            alt="image of me"
+            class="image"
+          />
+
+          <p class="aboutMe">
+            Hey, I'm Lahiru Kodikara. I am a student of IJSE Institute.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; Copyright 2024 Lahiru Kodikara. All Rights Reserved</p>
+      <hr />
+    </footer>
+  </body>
+</html>
