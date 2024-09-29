@@ -9,7 +9,7 @@
         margin: 0;
       }
 
-      .grid-container {
+      .container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -17,7 +17,7 @@
         height: 100vh;
       }
 
-      .grid-container > div {
+      .container > div {
         border: 1px solid black;
       }
 
@@ -28,7 +28,6 @@
 
       .box-2 {
         background-color: #008001;
-        grid-column: 3/4;
       }
 
       .box-3 {
@@ -39,22 +38,18 @@
 
       .box-4 {
         background-color: #81007f;
-        grid-column: 1/2;
       }
 
       .box-5 {
         background-color: #ff1593;
-        grid-column: 2/3;
       }
 
       .box-6 {
         background-color: #0000fe;
-        grid-column: 3/4;
       }
 
       .box-7 {
         background-color: #a42b29;
-        grid-column: 1/2;
       }
 
       .box-8 {
@@ -64,7 +59,7 @@
     </style>
   </head>
   <body>
-    <div class="grid-container">
+    <div class="container">
       <div class="box-1"></div>
       <div class="box-2"></div>
       <div class="box-3"></div>
